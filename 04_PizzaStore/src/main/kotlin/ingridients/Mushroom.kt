@@ -1,0 +1,3 @@
+package ingridients
+
+class Mushroom
