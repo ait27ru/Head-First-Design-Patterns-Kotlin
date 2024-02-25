@@ -1,8 +1,5 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-
 plugins {
-    kotlin("jvm") version "1.4.31"
-    application
+    kotlin("jvm") version "1.9.21"
 }
 
 group = "HeadFirstDesignPatterns"
@@ -20,12 +17,4 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
-}
-
-tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "1.8"
-}
-
-application {
-    mainClassName = "MainKt"
 }
