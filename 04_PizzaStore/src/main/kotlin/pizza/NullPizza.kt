@@ -3,7 +3,7 @@ package pizza
 import ingridients.abstraction.*
 import pizza.abstraction.Pizza
 
-class NullPizza() : Pizza() {
+class NullPizza : Pizza() {
     override var name = ""
     override var dough: Dough? = null
     override var sauce: Sauce? = null

@@ -4,7 +4,7 @@ import ingridients.abstraction.*
 import ingridientsFactory.abstraction.PizzaIngridientsFactory
 import pizza.abstraction.Pizza
 
-class ClamPizza(private var ingridientsFactory: PizzaIngridientsFactory) : Pizza() {
+class ClamPizza(private var ingredientsFactory: PizzaIngridientsFactory) : Pizza() {
 
     override var name = "Clam Pizza"
     override var dough: Dough? = null
@@ -15,8 +15,8 @@ class ClamPizza(private var ingridientsFactory: PizzaIngridientsFactory) : Pizza
 
     override fun prepare() {
         println("Preparing $name")
-        dough = ingridientsFactory.createDough()
-        sauce = ingridientsFactory.createSauce()
-        clams = ingridientsFactory.createClams()
+        dough = ingredientsFactory.createDough()
+        sauce = ingredientsFactory.createSauce()
+        clams = ingredientsFactory.createClams()
     }
 }

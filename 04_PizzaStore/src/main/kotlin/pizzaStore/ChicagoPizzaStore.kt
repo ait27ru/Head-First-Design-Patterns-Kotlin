@@ -10,13 +10,13 @@ import pizza.abstraction.Pizza
 
 class ChicagoPizzaStore : PizzaStore() {
 
-    private val ingridientsFactory = ChicagoPizzaIngridientsFactory()
+    private val ingredientsFactory = ChicagoPizzaIngridientsFactory()
 
     override fun createPizza(type: String): Pizza {
-        return when {
-            (type == "cheese") -> CheesePizza(ingridientsFactory).also { it.setName("Chicago Style ${it.getName()}") }
-            (type == "clam") -> ClamPizza(ingridientsFactory).also { it.setName("Chicago Style ${it.getName()}") }
-            (type == "pepperoni") -> PepperoniPizza(ingridientsFactory).also { it.setName("Chicago Style ${it.getName()}") }
+        return when (type) {
+            "cheese" -> CheesePizza(ingredientsFactory).also { it.setName("Chicago Style ${it.getName()}") }
+            "clam" -> ClamPizza(ingredientsFactory).also { it.setName("Chicago Style ${it.getName()}") }
+            "pepperoni" -> PepperoniPizza(ingredientsFactory).also { it.setName("Chicago Style ${it.getName()}") }
             else -> NullPizza()
         }
     }
