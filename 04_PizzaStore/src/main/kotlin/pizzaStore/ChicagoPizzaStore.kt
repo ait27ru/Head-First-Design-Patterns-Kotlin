@@ -1,7 +1,7 @@
 package pizzaStore
 
 import pizzaStore.abstraction.PizzaStore
-import ingridientsFactory.ChicagoPizzaIngridientsFactory
+import ingridientsFactory.ChicagoPizzaIngredientsFactory
 import pizza.CheesePizza
 import pizza.ClamPizza
 import pizza.NullPizza
@@ -10,7 +10,7 @@ import pizza.abstraction.Pizza
 
 class ChicagoPizzaStore : PizzaStore() {
 
-    private val ingredientsFactory = ChicagoPizzaIngridientsFactory()
+    private val ingredientsFactory = ChicagoPizzaIngredientsFactory()
 
     override fun createPizza(type: String): Pizza {
         return when (type) {

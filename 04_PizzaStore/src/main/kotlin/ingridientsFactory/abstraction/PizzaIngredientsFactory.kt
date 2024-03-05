@@ -2,7 +2,7 @@ package ingridientsFactory.abstraction
 
 import ingridients.abstraction.*
 
-interface PizzaIngridientsFactory {
+interface PizzaIngredientsFactory {
     fun createDough() : Dough
     fun createSauce() : Sauce
     fun createCheese() : Cheese

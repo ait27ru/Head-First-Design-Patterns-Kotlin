@@ -2,9 +2,9 @@ package ingridientsFactory
 
 import ingridients.*
 import ingridients.abstraction.*
-import ingridientsFactory.abstraction.PizzaIngridientsFactory
+import ingridientsFactory.abstraction.PizzaIngredientsFactory
 
-class NYPizzaIngridientsFactory : PizzaIngridientsFactory {
+class NYPizzaIngredientsFactory : PizzaIngredientsFactory {
     override fun createDough(): Dough {
         return ThinCrustDough()
     }

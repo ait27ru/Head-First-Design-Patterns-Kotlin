@@ -1,10 +1,10 @@
 package pizza
 
 import ingridients.abstraction.*
-import ingridientsFactory.abstraction.PizzaIngridientsFactory
+import ingridientsFactory.abstraction.PizzaIngredientsFactory
 import pizza.abstraction.Pizza
 
-class CheesePizza(private var ingredientsFactory: PizzaIngridientsFactory) : Pizza() {
+class CheesePizza(private var ingredientsFactory: PizzaIngredientsFactory) : Pizza() {
 
     override var name = "Cheese Pizza"
     override var dough: Dough? = null
